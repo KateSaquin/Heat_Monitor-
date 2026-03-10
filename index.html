@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pet Heat Monitor</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Pet Heat Monitor</h1>
+
+<div class="dashboard">
+
+<div class="card">
+
+<h2>Current Temperature</h2>
+
+<div class="temperature">
+<span id="tempValue">--</span> °C
+</div>
+
+<p id="statusText" class="safe">
+System Idle
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Camera Monitor</h2>
+
+<div class="cameraBox">
+Camera Feed Placeholder
+</div>
+
+<p class="cameraNote">
+Camera will appear here once hardware is connected
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Temperature Chart</h2>
+
+<canvas id="tempChart"></canvas>
+
+</div>
+
+
+<div class="card">
+
+<h2>Simulation Control</h2>
+
+<button id="startBtn" onclick="startSimulation()">Start Simulation</button>
+
+<button id="stopBtn" onclick="stopSimulation()">Stop Simulation</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
